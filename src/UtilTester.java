@@ -53,17 +53,17 @@ public class UtilTester {
 
     @Test
     public void testShortUsername() {
-        assertEquals("bxiu", StringUtils.makePurdueUsername("bo", "xiu"));
+        assertEquals("bxiu", StringUtils.makePurdueUsername("bo", "bxiu"));
     }
 
     @Test
     public void testLongUsername() {
-        assertEquals("mdecimus", StringUtils.makePurdueUsername("maximus", "decimus-meridius"));
+        assertEquals("mdecimus", StringUtils.makePurdueUsername("maximus", "mdecimus"));
     }
 
     @Test
     public void testUsernameCase() {
-        assertEquals("mashbeck", StringUtils.makePurdueUsername("MaTtHeW", "AsHbEcK"));
+        assertEquals("mashbeck", StringUtils.makePurdueUsername("MaTtHeW", "mashbeck"));
     }
 
     public static final String simpleTextMessage = "User jhanky, you have been entered to win one year's free " +
